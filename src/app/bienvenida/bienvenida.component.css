@@ -1,0 +1,51 @@
+.contenido {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #c5d121;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    .btn {
+      font-size: 24px;
+      padding: 10px 20px;
+    }
+}
+  
+.image-container {
+    background-image: url("https://img.freepik.com/fotos-premium/adorables-mascotas-sombreros-fiesta-sobre-fondo-turquesa_495423-37308.jpg?w=2000");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

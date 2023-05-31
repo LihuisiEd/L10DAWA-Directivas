@@ -1,0 +1,55 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.table {
+    border-collapse: separate; /* Establece el colapso de bordes como separado */
+    border-spacing: 0 10px; /* Agrega espaciado vertical entre las celdas */
+  }
+.rounded-border {
+    border-radius: 10px;
+    border: none; 
+}
+.rounded-border-left {
+    border-radius: 10px 0px 0px 10px;
+    border: none; 
+}
+.rounded-border-right {
+    border-radius: 0px 10px 10px 0px;
+    border: none; 
+}
+.header-border-left {
+    border-radius: 10px 0px 0px 10px;
+}
+.header-border-right {
+    border-radius: 0px 10px 10px 0px;
+}
+.header {
+    background-color: #c5d121;
+    color: #fff;
+}
+td{
+    background-color: #e7fd68;
+}
+.table td, .table th {
+    border: none;
+}
+
+.zoom-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Agrega una transición suave al hacer zoom */
+}
+.zoom-img:hover {
+  transform: scale(1.2); /* Aplica un zoom del 120% al hacer hover en la imagen */
+}
+.full-height-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-6">
+      <form [formGroup]="formulario" (submit)="abrirConfirmacion()" class="my-4">
+        <div class="form-group">
+          <h2>Ahora coloca los datos del usuario :)</h2>
+          <br>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="form-control" formControlName="nombre">
+          <div *ngIf="formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched" class="invalid-feedback">
+            El nombre es requerido.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" formControlName="email">
+          <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched" class="invalid-feedback">
+            El email es requerido y debe ser válido.
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn color-btn" [disabled]="formulario.invalid">Enviar</button>
+      </form>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+      <img src="https://media.istockphoto.com/id/1127314131/es/foto/chow-chow-de-caballero-con-gorro-de-cumplea%C3%B1os-busca-al-lado.jpg?s=612x612&w=0&k=20&c=gqB5orPDVBXnptsfp7NgGHXiSAbFL4OMnZ9c3tFatRo=" class="img-fluid zoom-img full-height-img" alt="Perro con sombrero">
+    </div>
+    
+    
+  </div>
+</div>

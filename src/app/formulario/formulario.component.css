@@ -1,0 +1,27 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.color-btn {
+    background-color: #c5d121;
+    border: none;
+    color: white;
+}
+.zoom-img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer zoom */
+}
+  .zoom-img:hover {
+    transform: scale(1.2); /* Aplica un zoom del 120% al hacer hover en la imagen */
+}
+.full-height-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
